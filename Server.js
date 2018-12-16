@@ -34,7 +34,7 @@ app.get('/home', (req,res)=>{
   res.render('Home',{
      dt:new Date(),
      yr:new Date().getFullYear(),
-     arr:["Gagan", "Oberoi"]
+     arr:["Gagan", "Oberoi","Yes done it"]
   })
 })
 
