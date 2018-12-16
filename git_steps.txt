@@ -1,0 +1,7 @@
+install git using git-scm.com
+check git version using git -version in cmd
+git init - will create .git folder in project folder
+git status - to check the status of untracked files..
+git add 'filename' or 'foldername' - to add file/folder to git repository
+.gitignore file -- mention the names of file/folder not to  include in git repository
+git commit -m 'message' - to save files to git

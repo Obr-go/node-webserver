@@ -3,24 +3,24 @@ const hbs = require('hbs')
 var app=express();
 
 
-
+var port = process.env.PORT || 3000;
 
 app.set('view engine', 'hbs')
 
-app.use(express.static(__dirname + '/static'))
+app.use(express.static(__dirname + '/public'))
 
-app.use((req,res,next)=>{
-  console.log(req.url)
-  next();
-})
+
+
+//app.use((req,res,next)=>{
+  //console.log(req.url)
+  //next();
+//})
 
 //app.use(function(req,res,next){
   //res.render("Maintenance")
   //next()
   //console.log("set h");
 //})
-
-
 
 hbs.registerPartials(__dirname + '/views')
 
@@ -47,7 +47,8 @@ app.get('/about', (req,res)=>{
   })
 })
 
+console.log(process.env.PORT)
 
-app.listen(3000,function(){
-  console.log("App is up and running on port 3000")
+app.listen(port,function(){
+  console.log("App is up and running on port " + port)
 })
