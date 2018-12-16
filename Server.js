@@ -47,7 +47,7 @@ app.get('/about', (req,res)=>{
   })
 })
 
-console.log(process.env.PORT)
+//console.log(process.env.PORT)
 
 app.listen(port,function(){
   console.log("App is up and running on port " + port)
